@@ -1,6 +1,6 @@
 {
   "name": "wac-etcdv2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Containerized etcd v2 for the wac stack",
   "repository": {
     "type": "git",
