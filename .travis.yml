@@ -1,0 +1,16 @@
+---
+sudo: required
+services:
+- docker
+language: node_js
+node_js:
+- '0.10'
+env:
+  global:
+  - GH_REF: github.com/chad-autry/wac-etcdv2
+script:
+- docker build -t chadautry/wac-etcdv2:latest .
+- if [[ ! -z "$TRAVIS_TAG" ]]; then docker tag chadautry/wac-etcdv2:latest chadautry/wac-node-config-templater:$TRAVIS_TAG ; fi
+after_success:
+- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+- docker push chadautry/wac-etcdv2

@@ -1,0 +1,22 @@
+{
+  "name": "wac-etcdv2",
+  "version": "0.1.0",
+  "description": "Containerized etcd v2 for the wac stack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chad-autry/wac-etcdv2.git"
+  },
+  "keywords": [
+    "Docker",
+    "etcd"
+  ],
+  "author": {
+    "name": "Chad Autry",
+    "url": "http://chad-autry.github.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chad-autry/wac-etcdv2/issues"
+  },
+  "homepage": "https://github.com/chad-autry/wac-etcdv2"
+}
